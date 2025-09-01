@@ -1,0 +1,36 @@
+# Doxygen configuration for Trigonometria_Esferica_Aeronaves
+# Minimal, focused on HTML output and Markdown docs
+
+PROJECT_NAME           = "Trigonometria_Esferica_Aeronaves"
+OUTPUT_DIRECTORY       = docs
+CREATE_SUBDIRS         = NO
+
+OPTIMIZE_OUTPUT_FOR_C  = YES
+EXTRACT_ALL            = YES
+EXTRACT_PRIVATE        = YES
+EXTRACT_STATIC         = YES
+EXTRACT_LOCAL_CLASSES  = YES
+HIDE_UNDOC_MEMBERS     = NO
+HIDE_UNDOC_CLASSES     = NO
+
+INPUT                  = README.md \
+                         TUTORIAL.md \
+                         src
+RECURSIVE              = YES
+FILE_PATTERNS          = *.c *.h *.md
+
+USE_MDFILE_AS_MAINPAGE = README.md
+MARKDOWN_SUPPORT       = YES
+
+GENERATE_HTML          = YES
+HTML_OUTPUT            = html
+
+GENERATE_LATEX         = NO
+GENERATE_MAN           = NO
+GENERATE_RTF           = NO
+GENERATE_XML           = NO
+
+QUIET                  = YES
+WARNINGS               = YES
+WARN_IF_UNDOCUMENTED   = NO
+WARN_IF_DOC_ERROR      = YES
